@@ -1,0 +1,147 @@
+    /* Demo */
+    .demo-store {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px
+    }
+
+    .demo-image {
+      min-height: 560px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #e8e2d9, #cfc5b7);
+      position: relative;
+      overflow: hidden
+    }
+
+    .demo-figure {
+      position: absolute;
+      left: 50%;
+      bottom: 25px;
+      transform: translateX(-50%);
+      width: 220px;
+      height: 460px
+    }
+
+    .demo-figure:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: #c78e70
+    }
+
+    .demo-body {
+      position: absolute;
+      left: 50%;
+      top: 76px;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 215px;
+      border-radius: 45px 45px 20px 20px;
+      background: var(--demo-garment, #A2674C);
+      transition: background .3s ease
+    }
+
+    .demo-body:before,
+    .demo-body:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 45px;
+      height: 205px;
+      border-radius: 20px;
+      background: #c78e70;
+      z-index: -1
+    }
+
+    .demo-body:before {
+      left: -34px;
+      transform: rotate(6deg)
+    }
+
+    .demo-body:after {
+      right: -34px;
+      transform: rotate(-6deg)
+    }
+
+    .demo-legs {
+      position: absolute;
+      left: 50%;
+      top: 285px;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 170px;
+      background: linear-gradient(90deg, #28292a 0 44%, transparent 44% 56%, #28292a 56%);
+      border-radius: 10px
+    }
+
+    .demo-info {
+      padding: 20px
+    }
+
+    .demo-info h2 {
+      font: 500 42px "Playfair Display", serif;
+      margin: 0 0 10px
+    }
+
+    .demo-price {
+      font: 700 24px "Manrope", sans-serif;
+      margin: 18px 0
+    }
+
+    .swatches {
+      display: flex;
+      gap: 10px;
+      margin: 18px 0 28px
+    }
+
+    .swatch {
+      width: 34px;
+      height: 34px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      cursor: pointer
+    }
+
+    .swatch.active {
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ink)
+    }
+
+    .demo-widget {
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      background: #faf8f4
+    }
+
+    .demo-widget h4 {
+      margin: 0 0 8px
+    }
+
+    .demo-widget p {
+      font-size: 12.5px;
+      color: var(--muted)
+    }
+
+    .demo-output {
+      margin-top: 15px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #f1eee8;
+      font-size: 12px;
+      display: none
+    }
+
+    .demo-output.show {
+      display: block
+    }
+

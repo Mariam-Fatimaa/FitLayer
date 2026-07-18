@@ -1,0 +1,148 @@
+    /* Footer/router states */
+    .route-active {
+      color: var(--ink) !important;
+      font-weight: 600
+    }
+
+    .page-transition {
+      animation: pageIn .42s ease both
+    }
+
+    @keyframes pageIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .toast {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 500;
+      padding: 12px 16px;
+      border-radius: 11px;
+      background: #1d1d1b;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: .25s
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:950px) {
+
+      .simple-grid,
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .split-layout,
+      .demo-store,
+      .contact-grid,
+      .featured-article {
+        grid-template-columns: 1fr
+      }
+
+      .metric-strip {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .metric-cell:nth-child(2) {
+        border-right: 0
+      }
+
+      .metric-cell:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line)
+      }
+
+      .docs-shell {
+        grid-template-columns: 190px minmax(0, 1fr)
+      }
+
+      .docs-toc {
+        display: none
+      }
+
+      .dev-layout {
+        grid-template-columns: 1fr
+      }
+
+      .dev-nav {
+        position: static;
+        border: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px
+      }
+    }
+
+    @media(max-width:700px) {
+
+      .subhero,
+      .page-section {
+        padding-left: 20px;
+        padding-right: 20px
+      }
+
+      .page-heading {
+        display: block
+      }
+
+      .page-heading p {
+        margin-top: 15px
+      }
+
+      .simple-grid,
+      .blog-grid,
+      .quick-grid {
+        grid-template-columns: 1fr
+      }
+
+      .metric-strip {
+        grid-template-columns: 1fr
+      }
+
+      .metric-cell {
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--line) !important
+      }
+
+      .metric-cell:last-child {
+        border-bottom: 0 !important
+      }
+
+      .docs-shell {
+        grid-template-columns: 1fr
+      }
+
+      .docs-sidebar {
+        position: static;
+        max-height: none
+      }
+
+      .docs-sidebar .docs-group {
+        display: none
+      }
+
+      .demo-image {
+        min-height: 470px
+      }
+
+      .field-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+

@@ -1,0 +1,334 @@
+    /* ============ SINGLE-FILE PAGE ROUTER ============ */
+    .page-view {
+      display: none;
+      min-height: 100vh
+    }
+
+    .page-view.active {
+      display: block
+    }
+
+    .subpage {
+      padding-top: 92px;
+      background: var(--paper)
+    }
+
+    .subhero {
+      padding: 112px 34px 86px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #f4f0e9 0%, var(--paper) 100%)
+    }
+
+    .subhero-inner {
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    .subhero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: clamp(46px, 6vw, 78px);
+      line-height: 1.08;
+      max-width: 850px;
+      margin-bottom: 24px;
+      font-style: normal;
+      /* or simply remove this property */
+    }
+
+    .subhero h1 em,
+    .subhero h1 .accent {
+      font-style: italic;
+      color: var(--accent);
+      /* optional */
+    }
+
+    .subhero p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0
+    }
+
+    .subhero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .subhero-actions .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      padding: 0 22px;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      background: #fff;
+      color: #151412;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all .25s ease;
+    }
+
+    .subhero-actions .cta:hover {
+      background: #f3f0ea;
+      border-color: #f3f0ea;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .45);
+    }
+
+    .subhero-actions .cta.secondary {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .22);
+      color: #fff;
+      backdrop-filter: blur(12px);
+    }
+
+    .subhero-actions .cta.secondary:hover {
+      background: rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .32);
+    }
+
+    .page-section {
+      padding: 96px 34px
+    }
+
+    .page-section.alt {
+      background: var(--surface-alt)
+    }
+
+    .page-shell {
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    .page-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 42px
+    }
+
+    .page-heading h2 {
+      font: 500 clamp(30px, 4vw, 50px)/1.08 "Playfair Display", serif;
+      /*font-style: italic;*/
+      letter-spacing: -.02em;
+      margin: 0;
+      max-width: 680px
+    }
+
+    .page-heading p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--muted);
+      max-width: 440px;
+      margin: 0
+    }
+
+    .simple-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px
+    }
+
+    .simple-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease
+    }
+
+    .simple-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 45px -32px rgba(29, 29, 27, .3);
+      border-color: rgba(29, 29, 27, .22)
+    }
+
+    .simple-icon {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: auto;
+      background: var(--surface-alt);
+      font-size: 17px
+    }
+
+    .simple-card h3 {
+      font-size: 16px;
+      margin: 26px 0 8px
+    }
+
+    .simple-card p {
+      font-size: 13.5px;
+      line-height: 1.58;
+      color: var(--muted);
+      margin: 0
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 18px;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none
+    }
+
+    .text-link:after {
+      content: "→";
+      transition: transform .2s ease
+    }
+
+    .text-link:hover:after {
+      transform: translateX(3px)
+    }
+
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .ui-visual {
+      background: #fff;
+      border: 1px solid rgba(29, 29, 27, .09);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 32px 70px -42px rgba(29, 29, 27, .35)
+    }
+
+    .ui-top {
+      display: flex;
+      gap: 6px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ui-top i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d5d0c8
+    }
+
+    .ui-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(29, 29, 27, .07)
+    }
+
+    .ui-row:last-child {
+      border-bottom: 0
+    }
+
+    .ui-thumb {
+      width: 48px;
+      height: 56px;
+      border-radius: 10px;
+      background: #ece7df;
+      border: 1px solid rgba(29, 29, 27, .06)
+    }
+
+    .ui-lines {
+      flex: 1
+    }
+
+    .ui-lines i {
+      display: block;
+      height: 7px;
+      background: #e8e4dd;
+      border-radius: 999px;
+      margin: 7px 0
+    }
+
+    .ui-lines i:first-child {
+      width: 42%;
+      background: #c7c1b8
+    }
+
+    .ui-lines i:last-child {
+      width: 68%
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 28px 0 0;
+      display: grid;
+      gap: 14px
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 28px;
+      font-size: 14px;
+      line-height: 1.5
+    }
+
+    .check-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: 700
+    }
+
+    .logo-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px
+    }
+
+    .logo-pills span {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      font-size: 12px
+    }
+
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      background: #fff
+    }
+
+    .metric-cell {
+      padding: 28px;
+      border-right: 1px solid var(--line)
+    }
+
+    .metric-cell:last-child {
+      border-right: 0
+    }
+
+    .metric-cell strong {
+      display: block;
+      font: 700 30px "Manrope", sans-serif;
+      letter-spacing: -.04em
+    }
+
+    .metric-cell span {
+      font-size: 12px;
+      color: var(--muted)
+    }
+

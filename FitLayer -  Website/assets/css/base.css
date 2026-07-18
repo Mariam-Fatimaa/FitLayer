@@ -1,0 +1,39 @@
+    :root {
+      --ink: #1d1d1b;
+      --muted: #686761;
+      --paper: #ede9e2;
+      --panel: rgba(255, 255, 255, .72);
+      --line: rgba(29, 29, 27, .14);
+      --violet: #6356e8;
+      --surface: #ffffff;
+      --surface-alt: #f6f3ec;
+      --ink-2: #141311;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      overflow-x: hidden
+    }
+
+    a,
+    button {
+      font: inherit;
+      color: inherit
+    }
+
+    ::selection {
+      background: #e3ddf9;
+      color: var(--violet)
+    }
+

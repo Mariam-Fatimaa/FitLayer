@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Live Demo — FitLayer
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/css/base.css" rel="stylesheet"/>
+  <link href="assets/css/layout.css" rel="stylesheet"/>
+  <link href="assets/css/components.css" rel="stylesheet"/>
+  <link href="assets/css/home.css" rel="stylesheet"/>
+  <link href="assets/css/subpages.css" rel="stylesheet"/>
+  <link href="assets/css/developers.css" rel="stylesheet"/>
+  <link href="assets/css/documentation.css" rel="stylesheet"/>
+  <link href="assets/css/demo.css" rel="stylesheet"/>
+  <link href="assets/css/pricing.css" rel="stylesheet"/>
+  <link href="assets/css/blog.css" rel="stylesheet"/>
+  <link href="assets/css/forms.css" rel="stylesheet"/>
+  <link href="assets/css/auth.css" rel="stylesheet"/>
+  <link href="assets/css/responsive.css" rel="stylesheet"/>
+ </head>
+ <body class="has-dark-hero">
+  <nav class="site-nav" id="mainNav">
+   <div class="nav-frame">
+    <a class="brand nav-brand" href="index.html">
+     FitLayer
+    </a>
+    <div class="nav-center">
+     <div class="nav-menu">
+      <details class="nav-dropdown">
+       <summary class="nav-link">
+        Product
+        <svg aria-hidden="true" class="nav-chevron" viewbox="0 0 20 20">
+         <path d="M5.75 7.5 10 11.75 14.25 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6">
+         </path>
+        </svg>
+       </summary>
+       <div class="nav-dropdown-panel">
+        <a class="nav-dropdown-item" href="features.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3Zm6 11 .9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14ZM6 15l1.2 2.8L10 19l-2.8 1.2L6 23l-1.2-2.8L2 19l2.8-1.2L6 15Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Features
+          </strong>
+          <small>
+           Explore the full platform
+          </small>
+         </span>
+        </a>
+        <a aria-current="page" class="nav-dropdown-item" href="demo.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <circle cx="12" cy="12" fill="none" r="8.5" stroke="currentColor" stroke-width="1.5">
+           </circle>
+           <path d="m10 8.8 5 3.2-5 3.2V8.8Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Live Demo
+          </strong>
+          <small>
+           Experience the try-on flow
+          </small>
+         </span>
+        </a>
+        <a class="nav-dropdown-item" href="pricing.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M5 7.5h14M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5">
+           </path>
+           <path d="M9 12h6M9 16h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Pricing
+          </strong>
+          <small>
+           Plans for every stage
+          </small>
+         </span>
+        </a>
+       </div>
+      </details>
+      <a class="nav-link" href="solutions.html">
+       Solutions
+      </a>
+      <a class="nav-link" href="developers.html">
+       Developers
+      </a>
+      <a class="nav-link" href="documentation.html">
+       Docs
+      </a>
+      <details class="nav-dropdown">
+       <summary class="nav-link">
+        Company
+        <svg aria-hidden="true" class="nav-chevron" viewbox="0 0 20 20">
+         <path d="M5.75 7.5 10 11.75 14.25 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6">
+         </path>
+        </svg>
+       </summary>
+       <div class="nav-dropdown-panel nav-dropdown-panel-right">
+        <a class="nav-dropdown-item" href="enterprise.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M4 20V8l8-4 8 4v12M8 20v-5h8v5M8 10h.01M12 10h.01M16 10h.01" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Enterprise
+          </strong>
+          <small>
+           Scale, security, and support
+          </small>
+         </span>
+        </a>
+        <a class="nav-dropdown-item" href="about.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M8.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM15.5 12.5a3 3 0 1 0 0-6M3 20a5.5 5.5 0 0 1 11 0M14 20a4.5 4.5 0 0 1 7 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           About
+          </strong>
+          <small>
+           Our story and mission
+          </small>
+         </span>
+        </a>
+        <a class="nav-dropdown-item" href="blog.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Journal
+          </strong>
+          <small>
+           Insights and product updates
+          </small>
+         </span>
+        </a>
+        <a class="nav-dropdown-item" href="contact.html">
+         <span class="nav-icon">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+          </svg>
+         </span>
+         <span>
+          <strong>
+           Contact
+          </strong>
+          <small>
+           Sales and support
+          </small>
+         </span>
+        </a>
+       </div>
+      </details>
+     </div>
+    </div>
+    <div class="nav-actions">
+     <a class="nav-login" href="login.html">
+      Log in
+     </a>
+     <a class="nav-cta" href="register.html">
+      Register
+     </a>
+     <button aria-expanded="false" aria-label="Open navigation" class="nav-toggle" id="navToggle">
+      <span>
+      </span>
+      <span>
+      </span>
+     </button>
+    </div>
+   </div>
+   <div class="nav-mobile" id="navMobile">
+    <a href="features.html">
+     Features
+    </a>
+    <a href="solutions.html">
+     Solutions
+    </a>
+    <a aria-current="page" href="demo.html">
+     Live Demo
+    </a>
+    <a href="pricing.html">
+     Pricing
+    </a>
+    <a href="developers.html">
+     Developers
+    </a>
+    <a href="documentation.html">
+     Documentation
+    </a>
+    <a href="enterprise.html">
+     Enterprise
+    </a>
+    <a href="about.html">
+     About
+    </a>
+    <a href="blog.html">
+     Journal
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+    <div class="nav-mobile-actions">
+     <a href="login.html">
+      Log in
+     </a>
+     <a class="nav-cta" href="register.html">
+      Start free
+     </a>
+    </div>
+   </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+   <a href="features.html">
+    Features
+   </a>
+   <a href="solutions.html">
+    Solutions
+   </a>
+   <a aria-current="page" href="demo.html">
+    Live Demo
+   </a>
+   <a href="pricing.html">
+    Pricing
+   </a>
+   <a href="developers.html">
+    Developers
+   </a>
+   <a href="documentation.html">
+    Documentation
+   </a>
+   <a href="enterprise.html">
+    Enterprise
+   </a>
+   <a href="about.html">
+    About
+   </a>
+   <a href="blog.html">
+    Journal
+   </a>
+   <a href="contact.html">
+    Contact
+   </a>
+   <div class="nav-mobile-actions">
+    <a href="login.html">
+     Log in
+    </a>
+    <a class="nav-cta" href="register.html">
+     Start free
+    </a>
+   </div>
+  </div>
+  <main class="page-view subpage active" id="page-demo">
+   <section class="subhero demo-hero">
+    <div class="subhero-inner">
+     <div class="kicker reveal">
+      Interactive Demo
+     </div>
+     <h1 class="reveal">
+      See virtual try-on from the
+      <em>
+       shopper’s perspective
+      </em>
+      .
+     </h1>
+     <p class="reveal">
+      Choose a garment, add a sample photo, and generate a realistic preview inside a retailer-ready
+          shopping experience.
+     </p>
+     <div class="demo-hero-actions reveal">
+      <a class="cta" href="#demo-experience">
+       Launch demo
+      </a>
+      <span class="demo-hero-note">
+       <svg aria-hidden="true" viewbox="0 0 20 20">
+        <path d="m6.5 10 2.2 2.2 4.8-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6">
+        </path>
+        <circle cx="10" cy="10" fill="none" r="7.5" stroke="currentColor" stroke-width="1.4">
+        </circle>
+       </svg>
+       No account required
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="page-section demo-page-section" id="demo-experience">
+    <div class="page-shell">
+     <div class="demo-stage reveal">
+      <div class="demo-browser">
+       <div class="demo-browser-bar">
+        <div class="demo-browser-dots">
+         <span>
+         </span>
+         <span>
+         </span>
+         <span>
+         </span>
+        </div>
+        <div class="demo-browser-address">
+         <svg aria-hidden="true" viewbox="0 0 20 20">
+          <path d="M6.5 9V6.8a3.5 3.5 0 0 1 7 0V9M5 9h10v7H5z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+          </path>
+         </svg>
+         studionova.com/products/signature-overcoat
+        </div>
+        <div class="demo-browser-actions">
+         <span>
+         </span>
+         <span>
+         </span>
+        </div>
+       </div>
+       <div class="demo-retailer-nav">
+        <a class="demo-retailer-brand" href="javascript:void(0)">
+         STUDIO NOVA
+        </a>
+        <div class="demo-retailer-links">
+         <span>
+          New
+                  arrivals
+         </span>
+         <span>
+          Women
+         </span>
+         <span>
+          Men
+         </span>
+         <span>
+          Collections
+         </span>
+        </div>
+        <div class="demo-retailer-tools">
+         <svg viewbox="0 0 20 20">
+          <circle cx="8.5" cy="8.5" fill="none" r="4.5" stroke="currentColor" stroke-width="1.4">
+          </circle>
+          <path d="m12 12 3.5 3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.4">
+          </path>
+         </svg>
+         <svg viewbox="0 0 20 20">
+          <path d="M5 7h10l-.8 9H5.8L5 7Zm2.5 0V5.5a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+          </path>
+         </svg>
+        </div>
+       </div>
+       <div class="demo-product-layout">
+        <div class="demo-product-visual">
+         <div class="demo-image" id="demoImage">
+          <div class="demo-image-label">
+           EDITOR'S PICK
+          </div>
+          <div class="demo-model">
+           <div class="demo-model-head">
+           </div>
+           <div class="demo-model-neck">
+           </div>
+           <div class="demo-model-garment" id="demoBody">
+            <span class="demo-lapel left">
+            </span>
+            <span class="demo-lapel right">
+            </span>
+            <span class="demo-button b1">
+            </span>
+            <span class="demo-button b2">
+            </span>
+           </div>
+           <div class="demo-model-arm left">
+           </div>
+           <div class="demo-model-arm right">
+           </div>
+           <div class="demo-model-legs">
+           </div>
+          </div>
+          <button aria-label="Previous image" class="demo-image-control prev">
+           <svg viewbox="0 0 20 20">
+            <path d="m12 5-5 5 5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            </path>
+           </svg>
+          </button>
+          <button aria-label="Next image" class="demo-image-control next">
+           <svg viewbox="0 0 20 20">
+            <path d="m8 5 5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            </path>
+           </svg>
+          </button>
+          <div class="demo-image-count">
+           1 / 4
+          </div>
+         </div>
+        </div>
+        <div class="demo-info">
+         <div class="demo-product-meta">
+          <span>
+           NEW SEASON
+          </span>
+          <button aria-label="Save item">
+           <svg viewbox="0 0 20 20">
+            <path d="M10 16.2 4.5 11A3.7 3.7 0 0 1 9.7 5.7L10 6l.3-.3a3.7 3.7 0 0 1 5.2 5.3L10 16.2Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.35">
+            </path>
+           </svg>
+          </button>
+         </div>
+         <h2>
+          Signature Overcoat
+         </h2>
+         <p class="demo-product-copy">
+          A softly structured overcoat with a clean shoulder, relaxed silhouette, and
+                  premium brushed finish.
+         </p>
+         <div class="demo-price">
+          $248.00
+          <span>
+           Taxes included
+          </span>
+         </div>
+         <div class="demo-option-head">
+          <strong>
+           Color
+          </strong>
+          <span id="demoColorName">
+           Cinnamon
+          </span>
+         </div>
+         <div class="swatches demo-swatches">
+          <button aria-label="Cinnamon" class="swatch active" data-color-name="Cinnamon" data-demo-color="#A2674C" style="background:#A2674C">
+          </button>
+          <button aria-label="Charcoal" class="swatch" data-color-name="Charcoal" data-demo-color="#30343A" style="background:#30343A">
+          </button>
+          <button aria-label="Olive" class="swatch" data-color-name="Olive" data-demo-color="#77705D" style="background:#77705D">
+          </button>
+          <button aria-label="Oat" class="swatch" data-color-name="Oat" data-demo-color="#D8D2C8" style="background:#D8D2C8">
+          </button>
+         </div>
+         <div class="demo-option-head demo-size-head">
+          <strong>
+           Size
+          </strong>
+          <button>
+           Size guide
+          </button>
+         </div>
+         <div class="demo-sizes">
+          <button>
+           XS
+          </button>
+          <button class="active">
+           S
+          </button>
+          <button>
+           M
+          </button>
+          <button>
+           L
+          </button>
+          <button>
+           XL
+          </button>
+         </div>
+         <button class="demo-primary-action" id="demoTryButton">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3Zm6 11 .8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.45">
+           </path>
+          </svg>
+          Try it on with FitLayer
+         </button>
+         <button class="demo-secondary-action">
+          Add to bag
+         </button>
+         <div class="demo-assurance">
+          <span>
+           <svg viewbox="0 0 20 20">
+            <path d="M3 6h10v7H3zM13 8h2l2 2v3h-4M6 15.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM14.5 15.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
+            </path>
+           </svg>
+           Free delivery
+          </span>
+          <span>
+           <svg viewbox="0 0 20 20">
+            <path d="M5 6.5 3 9l2 2.5M3.5 9H12a4 4 0 1 1 0 8H8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
+            </path>
+           </svg>
+           30-day returns
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <aside class="demo-widget-panel" id="demoWidgetPanel">
+       <div class="demo-widget-header">
+        <div>
+         <span class="demo-widget-brand">
+          <span class="demo-widget-mark">
+           F
+          </span>
+          FitLayer
+         </span>
+         <h3>
+          Virtual try-on
+         </h3>
+        </div>
+        <button aria-label="Close demo" class="demo-widget-close" id="demoWidgetClose">
+         <svg viewbox="0 0 20 20">
+          <path d="m6 6 8 8M14 6l-8 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+          </path>
+         </svg>
+        </button>
+       </div>
+       <div class="demo-progress">
+        <span class="active">
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+       </div>
+       <div class="demo-widget-step active" data-demo-step="upload">
+        <div class="demo-upload-preview">
+         <div class="demo-upload-person">
+          <div class="demo-upload-head">
+          </div>
+          <div class="demo-upload-body">
+          </div>
+         </div>
+         <div class="demo-upload-badge">
+          <svg viewbox="0 0 20 20">
+           <path d="M10 13V4m0 0L6.5 7.5M10 4l3.5 3.5M4 13v3h12v-3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+           </path>
+          </svg>
+          Sample photo
+         </div>
+        </div>
+        <h4>
+         Add a full-body photo
+        </h4>
+        <p>
+         Use the sample image to preview the complete try-on experience.
+        </p>
+        <button class="demo-widget-primary" id="demoUpload">
+         Use sample photo
+         <svg viewbox="0 0 20 20">
+          <path d="m8 5 5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+          </path>
+         </svg>
+        </button>
+        <small class="demo-privacy">
+         <svg viewbox="0 0 20 20">
+          <path d="M6 8V6.5a4 4 0 0 1 8 0V8M5 8h10v8H5z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+          </path>
+         </svg>
+         Images are processed securely
+        </small>
+       </div>
+       <div class="demo-widget-step" data-demo-step="processing">
+        <div class="demo-processing-visual">
+         <div class="demo-processing-person">
+          <div class="demo-processing-head">
+          </div>
+          <div class="demo-processing-body">
+          </div>
+          <div class="demo-processing-scan">
+          </div>
+         </div>
+        </div>
+        <h4>
+         Creating your preview
+        </h4>
+        <p>
+         FitLayer is matching the selected garment to the sample photo.
+        </p>
+        <div class="demo-processing-status">
+         <span>
+         </span>
+         <strong id="demoProcessingText">
+          Analyzing pose
+         </strong>
+        </div>
+       </div>
+       <div class="demo-widget-step" data-demo-step="result">
+        <div class="demo-result-visual">
+         <div class="demo-result-person">
+          <div class="demo-result-head">
+          </div>
+          <div class="demo-result-garment" id="demoResultGarment">
+          </div>
+          <div class="demo-result-legs">
+          </div>
+         </div>
+         <div class="demo-result-badge">
+          <svg viewbox="0 0 20 20">
+           <path d="m6 10 2.5 2.5L14 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+           </path>
+           <circle cx="10" cy="10" fill="none" r="7.5" stroke="currentColor" stroke-width="1.3">
+           </circle>
+          </svg>
+          Preview ready
+         </div>
+        </div>
+        <h4>
+         Your try-on is ready
+        </h4>
+        <p>
+         The Signature Overcoat has been applied in your selected color.
+        </p>
+        <div class="demo-result-actions">
+         <button class="demo-widget-primary" id="demoAddBag">
+          Add to bag
+         </button>
+         <button class="demo-widget-secondary" id="demoRestart">
+          Try another look
+         </button>
+        </div>
+       </div>
+      </aside>
+     </div>
+     <div class="demo-benefits reveal">
+      <div>
+       <strong>
+        Embedded experience
+       </strong>
+       <span>
+        Runs directly inside the retailer’s product page.
+       </span>
+      </div>
+      <div>
+       <strong>
+        Fast generation
+       </strong>
+       <span>
+        Designed to deliver a shopper-ready preview in seconds.
+       </span>
+      </div>
+      <div>
+       <strong>
+        Brand controlled
+       </strong>
+       <span>
+        Typography, color, and UI adapt to each storefront.
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="section-inner footer-grid">
+    <div class="footer-brand">
+     <div class="brand">
+      FitLayer
+     </div>
+     <p>
+      AI-powered virtual try-on for fashion e-commerce.
+     </p>
+    </div>
+    <div class="footer-col">
+     <h5>
+      Product
+     </h5>
+     <a href="features.html">
+      Features
+     </a>
+     <a href="solutions.html">
+      Solutions
+     </a>
+     <a href="pricing.html">
+      Pricing
+     </a>
+     <a href="developers.html">
+      Developers
+     </a>
+    </div>
+    <div class="footer-col">
+     <h5>
+      Resources
+     </h5>
+     <a href="documentation.html">
+      Documentation
+     </a>
+     <a href="blog.html">
+      Blog
+     </a>
+     <a href="contact.html">
+      Support
+     </a>
+    </div>
+    <div class="footer-col">
+     <h5>
+      Company
+     </h5>
+     <a href="about.html">
+      About
+     </a>
+     <a href="about.html">
+      Careers
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+    </div>
+    <div class="footer-col">
+     <h5>
+      Legal
+     </h5>
+     <a href="#">
+      Privacy
+     </a>
+     <a href="#">
+      Terms
+     </a>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <span>
+     © 2026 FitLayer. All rights reserved.
+    </span>
+    <span>
+     Made for shoppers who like to know before they buy.
+    </span>
+   </div>
+  </footer>
+  <script src="assets/js/navigation.js">
+  </script>
+  <script src="assets/js/animations.js">
+  </script>
+  <script src="assets/js/demo.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,62 @@
+    /* Pricing */
+    .billing-toggle {
+      display: inline-flex;
+      padding: 4px;
+      background: #e6e1d8;
+      border-radius: 999px;
+      margin-top: 26px;
+    }
+
+    .billing-toggle button {
+      border: 0;
+      background: transparent;
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      color: #7b7369;
+      /* Add this */
+      transition: all .25s ease;
+    }
+
+    .billing-toggle button.active {
+      background: #fff;
+      color: #171614;
+      /* Add this */
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    }
+
+    .billing-toggle button:not(.active):hover {
+      color: #171614;
+    }
+
+    .feature-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line)
+    }
+
+    .feature-table th,
+    .feature-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 12.5px
+    }
+
+    .feature-table th {
+      background: #f7f4ef;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em
+    }
+
+    .feature-table td:not(:first-child),
+    .feature-table th:not(:first-child) {
+      text-align: center
+    }
+

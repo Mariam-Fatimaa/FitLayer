@@ -1,0 +1,146 @@
+    /* Contact/Auth */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 48px
+    }
+
+    .contact-options {
+      display: grid;
+      gap: 12px
+    }
+
+    .contact-option {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px
+    }
+
+    .contact-option h3 {
+      font-size: 14px;
+      margin: 0 0 5px
+    }
+
+    .contact-option p {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0
+    }
+
+    .form-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 30px
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .field {
+      margin-bottom: 16px
+    }
+
+    .field label {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 600;
+      margin-bottom: 7px
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #fcfbf9;
+      font: 13px "DM Sans", sans-serif;
+      outline: none
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: #77736d;
+      box-shadow: 0 0 0 3px rgba(29, 29, 27, .05)
+    }
+
+    .field textarea {
+      min-height: 130px;
+      resize: vertical
+    }
+
+    .auth-page {
+      min-height: 100vh;
+      padding: 120px 20px 60px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #ede9e2, #f8f5ef)
+    }
+
+    .auth-card {
+      width: min(440px, 100%);
+      background: rgba(255, 255, 255, .86);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, .8);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 30px 80px -48px rgba(29, 29, 27, .4)
+    }
+
+    .auth-card h1 {
+      font-size: 38px;
+      margin-bottom: 10px
+    }
+
+    .auth-card>p {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-bottom: 26px
+    }
+
+    .social-btn {
+      width: 100%;
+      height: 45px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #fff;
+      cursor: pointer;
+      margin-bottom: 10px
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #99948b;
+      font-size: 11px;
+      margin: 18px 0
+    }
+
+    .divider:before,
+    .divider:after {
+      content: "";
+      height: 1px;
+      background: var(--line);
+      flex: 1
+    }
+
+    .auth-foot {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 18px
+    }
+
+    .auth-foot a {
+      color: var(--ink);
+      font-weight: 600
+    }
+

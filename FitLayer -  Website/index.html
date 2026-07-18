@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    FitLayer — AI Virtual Try-On
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/base.css" rel="stylesheet" />
+  <link href="assets/css/layout.css" rel="stylesheet" />
+  <link href="assets/css/components.css" rel="stylesheet" />
+  <link href="assets/css/home.css" rel="stylesheet" />
+  <link href="assets/css/subpages.css" rel="stylesheet" />
+  <link href="assets/css/developers.css" rel="stylesheet" />
+  <link href="assets/css/documentation.css" rel="stylesheet" />
+  <link href="assets/css/demo.css" rel="stylesheet" />
+  <link href="assets/css/pricing.css" rel="stylesheet" />
+  <link href="assets/css/blog.css" rel="stylesheet" />
+  <link href="assets/css/forms.css" rel="stylesheet" />
+  <link href="assets/css/auth.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="on-home">
+  <nav class="site-nav" id="mainNav">
+    <div class="nav-frame">
+      <a aria-current="page" class="brand nav-brand" href="index.html">
+        FitLayer
+      </a>
+      <div class="nav-center">
+        <div class="nav-menu">
+          <details class="nav-dropdown">
+            <summary class="nav-link">
+              Product
+              <svg aria-hidden="true" class="nav-chevron" viewbox="0 0 20 20">
+                <path d="M5.75 7.5 10 11.75 14.25 7.5" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="1.6">
+                </path>
+              </svg>
+            </summary>
+            <div class="nav-dropdown-panel">
+              <a class="nav-dropdown-item" href="features.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path
+                      d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3Zm6 11 .9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14ZM6 15l1.2 2.8L10 19l-2.8 1.2L6 23l-1.2-2.8L2 19l2.8-1.2L6 15Z"
+                      fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Features
+                  </strong>
+                  <small>
+                    Explore the full platform
+                  </small>
+                </span>
+              </a>
+              <a class="nav-dropdown-item" href="demo.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <circle cx="12" cy="12" fill="none" r="8.5" stroke="currentColor" stroke-width="1.5">
+                    </circle>
+                    <path d="m10 8.8 5 3.2-5 3.2V8.8Z" fill="none" stroke="currentColor" stroke-linejoin="round"
+                      stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Live Demo
+                  </strong>
+                  <small>
+                    Experience the try-on flow
+                  </small>
+                </span>
+              </a>
+              <a class="nav-dropdown-item" href="pricing.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path d="M5 7.5h14M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                      fill="none" stroke="currentColor" stroke-width="1.5">
+                    </path>
+                    <path d="M9 12h6M9 16h4" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Pricing
+                  </strong>
+                  <small>
+                    Plans for every stage
+                  </small>
+                </span>
+              </a>
+            </div>
+          </details>
+          <a class="nav-link" href="solutions.html">
+            Solutions
+          </a>
+          <a class="nav-link" href="developers.html">
+            Developers
+          </a>
+          <a class="nav-link" href="documentation.html">
+            Docs
+          </a>
+          <details class="nav-dropdown">
+            <summary class="nav-link">
+              Company
+              <svg aria-hidden="true" class="nav-chevron" viewbox="0 0 20 20">
+                <path d="M5.75 7.5 10 11.75 14.25 7.5" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="1.6">
+                </path>
+              </svg>
+            </summary>
+            <div class="nav-dropdown-panel nav-dropdown-panel-right">
+              <a class="nav-dropdown-item" href="enterprise.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path d="M4 20V8l8-4 8 4v12M8 20v-5h8v5M8 10h.01M12 10h.01M16 10h.01" fill="none"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Enterprise
+                  </strong>
+                  <small>
+                    Scale, security, and support
+                  </small>
+                </span>
+              </a>
+              <a class="nav-dropdown-item" href="about.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path
+                      d="M8.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM15.5 12.5a3 3 0 1 0 0-6M3 20a5.5 5.5 0 0 1 11 0M14 20a4.5 4.5 0 0 1 7 0"
+                      fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    About
+                  </strong>
+                  <small>
+                    Our story and mission
+                  </small>
+                </span>
+              </a>
+              <a class="nav-dropdown-item" href="blog.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Journal
+                  </strong>
+                  <small>
+                    Insights and product updates
+                  </small>
+                </span>
+              </a>
+              <a class="nav-dropdown-item" href="contact.html">
+                <span class="nav-icon">
+                  <svg aria-hidden="true" viewbox="0 0 24 24">
+                    <path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1.5">
+                    </path>
+                  </svg>
+                </span>
+                <span>
+                  <strong>
+                    Contact
+                  </strong>
+                  <small>
+                    Sales and support
+                  </small>
+                </span>
+              </a>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-login" href="login.html">
+          Log in
+        </a>
+        <a class="nav-cta" href="register.html">
+          Register
+        </a>
+        <button aria-expanded="false" aria-label="Open navigation" class="nav-toggle" id="navToggle">
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="features.html">
+        Features
+      </a>
+      <a href="solutions.html">
+        Solutions
+      </a>
+      <a href="demo.html">
+        Live Demo
+      </a>
+      <a href="pricing.html">
+        Pricing
+      </a>
+      <a href="developers.html">
+        Developers
+      </a>
+      <a href="documentation.html">
+        Documentation
+      </a>
+      <a href="enterprise.html">
+        Enterprise
+      </a>
+      <a href="about.html">
+        About
+      </a>
+      <a href="blog.html">
+        Journal
+      </a>
+      <a href="contact.html">
+        Contact
+      </a>
+      <div class="nav-mobile-actions">
+        <a href="login.html">
+          Log in
+        </a>
+        <a class="nav-cta" href="register.html">
+          Start free
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="features.html">
+      Features
+    </a>
+    <a href="solutions.html">
+      Solutions
+    </a>
+    <a href="demo.html">
+      Live Demo
+    </a>
+    <a href="pricing.html">
+      Pricing
+    </a>
+    <a href="developers.html">
+      Developers
+    </a>
+    <a href="documentation.html">
+      Documentation
+    </a>
+    <a href="enterprise.html">
+      Enterprise
+    </a>
+    <a href="about.html">
+      About
+    </a>
+    <a href="blog.html">
+      Journal
+    </a>
+    <a href="contact.html">
+      Contact
+    </a>
+    <div class="nav-mobile-actions">
+      <a href="login.html">
+        Log in
+      </a>
+      <a class="nav-cta" href="register.html">
+        Start free
+      </a>
+    </div>
+  </div>
+  <main class="page-view active" id="page-home">
+
+    <!-- ======================= HERO (unchanged) ======================= -->
+    <section class="hero-scroll" id="heroScroll">
+      <div class="hero-pin">
+        <canvas id="studioCanvas">
+        </canvas>
+        <div class="hero-copy">
+          <div class="eyebrow">
+            AI Virtual Try-On for Fashion Retail
+          </div>
+          <h1>
+            See It.
+            <em>
+              Wear It.
+            </em>
+            Buy It.
+          </h1>
+          <p>
+            Allow customers to see themselves in your products before checkout, helping them make faster, more confident
+            purchase decisions.
+          </p>
+          <div class="cta-row hero-cta">
+            <a class="cta" href="demo.html">
+              Try the live demo
+            </a>
+
+            <a class="cta secondary" href="contact.html">
+              Book a demo
+            </a>
+          </div>
+        </div>
+        <div class="scene-hud">
+          <div class="status-pill" id="statusPill">
+            <span class="status-dot">
+            </span>
+            <span id="statusText">
+              Analyzing
+              Body
+            </span>
+          </div>
+          <div class="scanline" id="scanline">
+          </div>
+          <div class="outfit-panel">
+            <div class="outfit-index" id="outfitIndex">
+              01 / 07
+            </div>
+            <div class="outfit-name" id="outfitName">
+              Plain White T-Shirt
+            </div>
+            <div class="progress" id="progress">
+            </div>
+          </div>
+          <div class="scroll-note">
+            Scroll to try on
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= TRUSTED BRANDS ======================= -->
+    <section class="trusted-section">
+      <div class="section-inner">
+        <div class="kicker reveal">
+          Trusted by modern retailers
+        </div>
+        <div class="logo-wall">
+          <span class="logo-item reveal">
+            Studio Nova
+          </span>
+          <span class="logo-item reveal">
+            Arc &amp; Field
+          </span>
+          <span class="logo-item reveal">
+            Kestrel
+          </span>
+          <span class="logo-item reveal">
+            North Tide
+          </span>
+          <span class="logo-item reveal">
+            Loomcraft
+          </span>
+          <span class="logo-item reveal">
+            Verdant &amp; Co
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= WHY FITLAYER ======================= -->
+    <section class="section why-section">
+      <div class="section-inner">
+        <div class="kicker reveal">
+          Why FitLayer
+        </div>
+        <h2 class="section-title reveal">
+          Shopping with
+          <em>
+            certainty
+          </em>
+          , not guesswork.
+        </h2>
+        <p class="section-desc reveal">
+          Give shoppers the reassurance they need by letting them see how clothing looks before they buy.
+        </p>
+        <div class="compare-grid">
+          <div class="compare-col traditional reveal">
+            <div class="compare-label">
+              Traditional shopping
+            </div>
+            <ul>
+              <li>
+                Guesswork on fit and sizing
+              </li>
+              <li>
+                High return rates eat into margin
+              </li>
+              <li>
+                Shoppers hesitate and abandon cart
+              </li>
+              <li>
+                Static photos, one body, one pose
+              </li>
+            </ul>
+          </div>
+          <div class="compare-col fitlayer reveal">
+            <div class="compare-label">
+              With FitLayer
+            </div>
+            <ul>
+              <li>
+                Shoppers see the fit on themselves
+              </li>
+              <li>
+                Returns drop measurably
+              </li>
+              <li>
+                Checkout confidence goes up
+              </li>
+              <li>
+                A photoreal preview, generated in seconds
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-card reveal">
+            <div class="stat-num">
+              −32%
+            </div>
+            <div class="stat-label">
+              Returns
+            </div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num">
+              +18%
+            </div>
+            <div class="stat-label">
+              Conversion
+            </div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num">
+              &lt;2s
+            </div>
+            <div class="stat-label">
+              Generation time
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= PLATFORM FEATURES (BENTO) ======================= -->
+    <section class="section features-section">
+      <div class="section-inner">
+        <div class="kicker reveal">
+          Platform Features
+        </div>
+        <h2 class="section-title reveal">
+          Built to Scale Every
+          <em>
+            Experience.
+          </em>
+        </h2>
+        <p>Enterprise-ready infrastructure, powerful APIs, AI processing, and real-time analytics—all in one platform.
+        </p>
+        <div class="bento-grid">
+          <div class="bento-item large reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <circle cx="12" cy="8" r="3">
+              </circle>
+              <path d="M5 21v-2a7 7 0 0114 0v2">
+              </path>
+            </svg>
+            <h3>
+              AI Virtual Try-On
+            </h3>
+            <p>
+              Photoreal garment previews generated from a single shopper photo, in seconds.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M4 6h16M4 12h10M4 18h16">
+              </path>
+            </svg>
+            <h3>
+              Widget Customization
+            </h3>
+            <p>
+              Match colors, type, and placement to your storefront.
+            </p>
+          </div>
+          <div class="bento-item wide reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M4 19V9M12 19V5M20 19v-7">
+              </path>
+            </svg>
+            <h3>
+              Analytics Dashboard
+            </h3>
+            <p>
+              Track try-on volume, conversion lift, and return impact in one place.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <rect height="16" rx="3" width="16" x="4" y="4">
+              </rect>
+            </svg>
+            <h3>
+              Asset Management
+            </h3>
+            <p>
+              Upload and organize your garment catalog centrally.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M8 6L2 12l6 6M16 6l6 6-6 6">
+              </path>
+            </svg>
+            <h3>
+              JavaScript SDK
+            </h3>
+            <p>
+              Drop the widget into any storefront with a few lines of code.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M4 4h16v16H4z">
+              </path>
+              <path d="M4 9h16">
+              </path>
+            </svg>
+            <h3>
+              REST API
+            </h3>
+            <p>
+              Full programmatic access for custom integrations.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M12 3l7 3v6c0 5-3.4 7.7-7 9-3.6-1.3-7-4-7-9V6z">
+              </path>
+            </svg>
+            <h3>
+              Enterprise Security
+            </h3>
+            <p>
+              SOC 2-ready infrastructure and encrypted photo handling.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <rect height="12" rx="2" width="18" x="3" y="4">
+              </rect>
+              <path d="M8 20h8">
+              </path>
+            </svg>
+            <h3>
+              Multi-platform Support
+            </h3>
+            <p>
+              Shopify, WooCommerce, and custom stacks, out of the box.
+            </p>
+          </div>
+          <div class="bento-item reveal">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+              <path d="M13 2L4 14h7l-1 8 9-12h-7z">
+              </path>
+            </svg>
+            <h3>
+              Fast Integration
+            </h3>
+            <p>
+              Most teams are live within a day, not a quarter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= HOW IT WORKS ======================= -->
+    <section class="section how-section">
+      <div class="section-inner">
+        <div class="how-head">
+          <div>
+            <div class="kicker reveal">
+              How It Works
+            </div>
+            <h2 class="section-title reveal">
+              From product page to
+              <em>
+                confident checkout
+              </em>
+              .
+            </h2>
+          </div>
+          <p class="section-desc reveal">
+            FitLayer turns a shopper photo and your product imagery into a realistic try-on
+            experience without interrupting the buying journey.
+          </p>
+        </div>
+        <div class="how-grid">
+          <article class="how-card reveal">
+            <div class="how-number">
+              Step 01
+            </div>
+            <div class="how-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+                <path d="M4 5h16v14H4z">
+                </path>
+                <path d="M8 9h8M8 13h5">
+                </path>
+              </svg>
+            </div>
+            <h3>
+              Add FitLayer to your store
+            </h3>
+            <p>
+              Connect your storefront, upload your garments, and match the widget to your brand.
+            </p>
+          </article>
+          <article class="how-card reveal">
+            <div class="how-number">
+              Step 02
+            </div>
+            <div class="how-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+                <path d="M12 16V4M12 4 7 9M12 4l5 5">
+                </path>
+                <path d="M4 16v3h16v-3">
+                </path>
+              </svg>
+            </div>
+            <h3>
+              Shopper uploads a photo
+            </h3>
+            <p>
+              A simple, guided upload begins directly from the product page in just a few seconds.
+            </p>
+          </article>
+          <article class="how-card reveal">
+            <div class="how-number">
+              Step 03
+            </div>
+            <div class="how-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+                <path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3Z">
+                </path>
+                <path d="M18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14Z">
+                </path>
+              </svg>
+            </div>
+            <h3>
+              AI creates the try-on
+            </h3>
+            <p>
+              FitLayer generates a realistic preview that keeps the shopper and garment visually consistent.
+            </p>
+          </article>
+          <article class="how-card reveal">
+            <div class="how-number">
+              Step 04
+            </div>
+            <div class="how-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+                <path d="M5 6h14l-1 8H7L5 6Z">
+                </path>
+                <path d="M9 19h.01M16 19h.01M7 14h11">
+                </path>
+              </svg>
+            </div>
+            <h3>
+              Shopper checks out confidently
+            </h3>
+            <p>
+              With less uncertainty around the look, shoppers can make faster and more confident purchase decisions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= DEVELOPER EXPERIENCE ======================= -->
+    <section class="section dev-section">
+      <div class="section-inner dev-grid">
+        <div class="dev-copy reveal">
+          <div class="kicker">
+            Developer Experience
+          </div>
+          <h2 class="section-title">
+            Ship it in an
+            <em>
+              afternoon
+            </em>
+            .
+          </h2>
+          <p class="section-desc">
+            One SDK, one widget, real documentation. FitLayer is built the way developers actually
+            like to integrate things.
+          </p>
+          <div class="framework-badges">
+            <span>
+              React
+            </span>
+            <span>
+              Vue
+            </span>
+            <span>
+              Shopify
+            </span>
+            <span>
+              WooCommerce
+            </span>
+            <span>
+              Vanilla JS
+            </span>
+          </div>
+        </div>
+        <div class="code-card reveal">
+          <div class="code-tabs">
+            <button class="ctab active" data-tab="0">
+              Install
+            </button>
+            <button class="ctab" data-tab="1">
+              Initialize
+            </button>
+            <button class="ctab" data-tab="2">
+              REST API
+            </button>
+          </div>
+          <pre class="code-pane active" data-pane="0">npm install @fitlayer/widget</pre>
+          <pre class="code-pane" data-pane="1">import { FitLayer } from '@fitlayer/widget';
+
+FitLayer.init({
+  apiKey: 'pk_live_...',
+  productId: 'overcoat-248',
+  mountId: 'tryon-button'
+});</pre>
+          <pre class="code-pane" data-pane="2">curl https://api.fitlayer.ai/v1/tryon \
+  -H "Authorization: Bearer sk_live_..." \
+  -F "photo=@shopper.jpg" \
+  -F "garment_id=overcoat-248"</pre>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= DASHBOARD PREVIEW ======================= -->
+    <section class="section dashboard-section">
+      <div class="section-inner">
+        <div class="kicker reveal">
+          Dashboard Preview
+        </div>
+        <h2 class="section-title reveal">
+          Everything about your integration,
+          <em>
+            at a glance
+          </em>
+          .
+        </h2>
+        <div class="dash-mock reveal">
+          <div class="dash-chrome">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+          </div>
+          <div class="dash-body">
+            <div class="dash-sidebar">
+              <div class="dash-side-item active">
+                Overview
+              </div>
+              <div class="dash-side-item">
+                Analytics
+              </div>
+              <div class="dash-side-item">
+                Garments
+              </div>
+              <div class="dash-side-item">
+                Widget Settings
+              </div>
+              <div class="dash-side-item">
+                API Keys
+              </div>
+            </div>
+            <div class="dash-main">
+              <div class="dash-main-head">
+                <div>
+                  <h3>
+                    Monthly overview
+                  </h3>
+                  <p>
+                    Performance across all active storefronts
+                  </p>
+                </div>
+                <div class="dash-period">
+                  Last 30 days
+                </div>
+              </div>
+              <div class="dash-stats">
+                <div class="dash-stat">
+                  <div class="ds-num">
+                    12,480
+                  </div>
+                  <div class="ds-label">
+                    Monthly try-ons
+                  </div>
+                  <div class="ds-change">
+                    Up 14% vs last month
+                  </div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-num">
+                    18.4%
+                  </div>
+                  <div class="ds-label">
+                    Conversion lift
+                  </div>
+                  <div class="ds-change">
+                    Up 3.2% vs last month
+                  </div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-num">
+                    1.8 sec
+                  </div>
+                  <div class="ds-label">
+                    Average generation
+                  </div>
+                  <div class="ds-change">
+                    0.2 sec faster
+                  </div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-num">
+                    6
+                  </div>
+                  <div class="ds-label">
+                    Active integrations
+                  </div>
+                  <div class="ds-change">
+                    2 added this month
+                  </div>
+                </div>
+              </div>
+              <div class="dash-content">
+                <div class="dash-card">
+                  <div class="dash-card-head">
+                    <h4>
+                      Try-on activity
+                    </h4>
+                    <span>
+                      Daily sessions
+                    </span>
+                  </div>
+                  <div class="dash-line-chart">
+                    <svg aria-hidden="true" preserveaspectratio="none" viewbox="0 0 600 180">
+                      <path
+                        d="M0 145 C55 142,78 122,118 128 S188 105,230 110 S292 78,335 86 S410 48,462 63 S535 30,600 36">
+                      </path>
+                      <circle cx="118" cy="128" r="3.5">
+                      </circle>
+                      <circle cx="230" cy="110" r="3.5">
+                      </circle>
+                      <circle cx="335" cy="86" r="3.5">
+                      </circle>
+                      <circle cx="462" cy="63" r="3.5">
+                      </circle>
+                      <circle cx="600" cy="36" r="3.5">
+                      </circle>
+                    </svg>
+                  </div>
+                  <div class="dash-axis">
+                    <span>
+                      Jun 18
+                    </span>
+                    <span>
+                      Jun 24
+                    </span>
+                    <span>
+                      Jun 30
+                    </span>
+                    <span>
+                      Jul
+                      6
+                    </span>
+                    <span>
+                      Jul 12
+                    </span>
+                  </div>
+                </div>
+                <div class="dash-card">
+                  <div class="dash-card-head">
+                    <h4>
+                      Latest activity
+                    </h4>
+                    <span>
+                      Today
+                    </span>
+                  </div>
+                  <div class="activity-list">
+                    <div class="activity-item">
+                      <div class="activity-time">
+                        10:42
+                      </div>
+                      <div class="activity-copy">
+                        <strong>
+                          Preview generated
+                        </strong>
+                        <span>
+                          Signature Overcoat
+                        </span>
+                      </div>
+                    </div>
+                    <div class="activity-item">
+                      <div class="activity-time">
+                        10:37
+                      </div>
+                      <div class="activity-copy">
+                        <strong>
+                          Garment published
+                        </strong>
+                        <span>
+                          Black Tailored Blazer
+                        </span>
+                      </div>
+                    </div>
+                    <div class="activity-item">
+                      <div class="activity-time">
+                        10:21
+                      </div>
+                      <div class="activity-copy">
+                        <strong>
+                          SDK connected
+                        </strong>
+                        <span>
+                          North Tide storefront
+                        </span>
+                      </div>
+                    </div>
+                    <div class="activity-item">
+                      <div class="activity-time">
+                        09:58
+                      </div>
+                      <div class="activity-copy">
+                        <strong>
+                          Integration added
+                        </strong>
+                        <span>
+                          Studio Nova EU
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="garment-list">
+                <div class="garment-head"><span>Recent garments</span><span>Status</span><span>Try-ons</span></div>
+                <div class="garment-row">
+                  <div class="garment-name"><span class="garment-icon"></span>Signature Overcoat</div><span
+                    class="garment-status">Live</span><span class="garment-tries">3,482</span>
+                </div>
+                <div class="garment-row">
+                  <div class="garment-name"><span class="garment-icon"></span>Black Tailored Blazer</div><span
+                    class="garment-status">Live</span><span class="garment-tries">2,916</span>
+                </div>
+                <div class="garment-row">
+                  <div class="garment-name"><span class="garment-icon"></span>Classic Denim Jacket</div><span
+                    class="garment-status">Draft</span><span class="garment-tries">1,204</span>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= TESTIMONIALS ======================= -->
+    <section class="section testimonial-section">
+      <div class="section-inner">
+        <div class="kicker reveal">
+          Testimonials
+        </div>
+        <h2 class="section-title reveal">
+          What teams say about
+          <em>
+            FitLayer
+          </em>
+        </h2>
+        <p>Real feedback from the teams using FitLayer to build the next generation of fashion commerce.</p>
+        <div class="testimonial-grid">
+          <div class="t-card reveal">
+            <p>
+              "Returns on our outerwear line dropped within the first month. Shoppers finally know what they're
+              getting."
+            </p>
+            <div class="t-person">
+              <div class="t-avatar">
+                MK
+              </div>
+              <div>
+                <strong>
+                  Maya Kessler
+                </strong>
+                <small>
+                  Head of E-Commerce, Studio Nova
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="t-card reveal">
+            <p>
+              "Integration took an afternoon. The SDK is genuinely the easiest widget we've ever shipped."
+            </p>
+            <div class="t-person">
+              <div class="t-avatar">
+                DR
+              </div>
+              <div>
+                <strong>
+                  Devon Reyes
+                </strong>
+                <small>
+                  Lead Engineer, Arc &amp; Field
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="t-card reveal">
+            <p>
+              "Conversion on product pages with the widget is meaningfully higher than pages without it."
+            </p>
+            <div class="t-person">
+              <div class="t-avatar">
+                AL
+              </div>
+              <div>
+                <strong>
+                  Anika Lorde
+                </strong>
+                <small>
+                  Growth Lead, Kestrel
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="t-card reveal">
+            <p>
+              "Our support team gets far fewer 'will this fit me' questions now. The preview answers it for us."
+            </p>
+            <div class="t-person">
+              <div class="t-avatar">
+                TB
+              </div>
+              <div>
+                <strong>
+                  Theo Bramwell
+                </strong>
+                <small>
+                  Founder, North Tide
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= PRICING PREVIEW ======================= -->
+    <!-- <section class="section pricing-section">
+      <div class="section-inner">
+        <div class="kicker reveal">Pricing</div>
+        <h2 class="section-title reveal">Start free. <em>Scale</em> when you're ready.</h2>
+        <p class="section-desc reveal">Simple plans that grow with your catalog. Full comparison on the pricing page.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="price-card reveal">
+            <div class="price-name">Starter</div>
+            <div class="price-amount">$0<span>/mo</span></div>
+            <p class="price-desc">For testing the widget on a single storefront.</p>
+            <ul>
+              <li>Up to 200 try-ons / month</li>
+              <li>1 storefront integration</li>
+              <li>Standard widget styling</li>
+              <li>Community support</li>
+            </ul>
+            <a class="cta secondary" href="#">Start Free</a>
+          </div>
+          <div class="price-card featured reveal">
+            <div class="price-badge">Most popular</div>
+            <div class="price-name">Growth</div>
+            <div class="price-amount">$249<span>/mo</span></div>
+            <p class="price-desc">For growing retailers scaling try-on across their catalog.</p>
+            <ul>
+              <li>Up to 10,000 try-ons / month</li>
+              <li>Unlimited storefront integrations</li>
+              <li>Full widget customization</li>
+              <li>Analytics dashboard</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="cta" href="#" style="background:#fff;color:var(--ink);border-color:#fff;">Start Free</a>
+          </div>
+          <div class="price-card reveal">
+            <div class="price-name">Enterprise</div>
+            <div class="price-amount">Custom</div>
+            <p class="price-desc">For high-volume retailers needing SLAs and custom deployment.</p>
+            <ul>
+              <li>Unlimited try-ons</li>
+              <li>Dedicated infrastructure</li>
+              <li>Custom SLAs &amp; onboarding</li>
+              <li>Enterprise security review</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <a class="cta secondary" href="#">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ======================= FAQ ======================= -->
+    <section class="section faq-section">
+      <div class="section-inner narrow">
+        <div class="kicker reveal">
+          FAQ
+        </div>
+        <h2 class="section-title reveal">
+          Answers,
+          <em>
+            before
+          </em>
+          you ask.
+        </h2>
+        <div class="faq-list">
+          <div class="faq-item open reveal">
+            <button class="faq-q">
+              How long does integration take?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Most teams are live within a day using our JavaScript SDK. Shopify and WooCommerce merchants can be
+                live in under an hour with our app integrations.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              Which platforms does FitLayer support?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Shopify, WooCommerce, and any custom storefront via our JavaScript SDK or REST API — including React,
+                Vue, and vanilla JS stacks.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              How does the AI generate the preview?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                FitLayer analyzes the shopper's uploaded photo for body proportions, then maps your garment's fit and
+                drape onto it to generate a realistic preview in seconds.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              What happens to shopper photos?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Photos are used only to generate the preview and are not stored or shared beyond that session unless
+                the shopper explicitly opts in to save it.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              Is FitLayer secure for enterprise use?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Yes. Our infrastructure is built toward SOC 2 standards, with encrypted photo handling and enterprise
+                security review available on the Enterprise plan.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              Do you offer a free plan?
+              <span>
+                +
+              </span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Yes — the Starter plan is free and includes up to 200 try-ons a month on a single storefront, no credit
+                card required.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= FINAL CTA ======================= -->
+    <section class="section final-cta">
+      <div class="section-inner">
+        <h2 class="section-title reveal">
+          Give your shoppers
+          <em>
+            a mirror
+          </em>
+          , not a guess.
+        </h2>
+        <p class="section-desc reveal">
+          Start free, or talk to us about a custom rollout across your catalog.
+        </p>
+        <div class="cta-row reveal">
+          <a href="#" class="action-btn action-btn-primary">
+            Start Free
+          </a>
+
+          <a href="#" class="action-btn action-btn-light">
+            Book a Demo
+          </a>
+
+          <a href="#" class="action-btn action-btn-outline">
+            Contact Sales
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          FitLayer
+        </div>
+        <p>
+          AI-powered virtual try-on for fashion e-commerce.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>
+          Product
+        </h5>
+        <a href="features.html">
+          Features
+        </a>
+        <a href="solutions.html">
+          Solutions
+        </a>
+        <a href="pricing.html">
+          Pricing
+        </a>
+        <a href="developers.html">
+          Developers
+        </a>
+      </div>
+      <div class="footer-col">
+        <h5>
+          Resources
+        </h5>
+        <a href="documentation.html">
+          Documentation
+        </a>
+        <a href="blog.html">
+          Blog
+        </a>
+        <a href="contact.html">
+          Support
+        </a>
+      </div>
+      <div class="footer-col">
+        <h5>
+          Company
+        </h5>
+        <a href="about.html">
+          About
+        </a>
+        <a href="about.html">
+          Careers
+        </a>
+        <a href="contact.html">
+          Contact
+        </a>
+      </div>
+      <div class="footer-col">
+        <h5>
+          Legal
+        </h5>
+        <a href="#">
+          Privacy
+        </a>
+        <a href="#">
+          Terms
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>
+        © 2026 FitLayer. All rights reserved.
+      </span>
+      <span>
+        Made for shoppers who like to know before they buy.
+      </span>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+  </script>
+  <script src="assets/js/navigation.js">
+  </script>
+  <script src="assets/js/animations.js">
+  </script>
+  <script src="assets/js/faq.js">
+  </script>
+  <script src="assets/js/home-hero.js">
+  </script>
+  <script src="assets/js/code-tabs.js">
+  </script>
+</body>
+
+</html>
